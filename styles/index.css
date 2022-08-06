@@ -293,5 +293,12 @@ body{
       grid-template-columns: 1fr;
    }
 }
-
-
+@media(max-width:600px){
+   .logo{
+      width: 50%!important;
+      min-height: 76px;
+   }
+   .nav-right{
+      width: 40% !important;
+   }
+}
