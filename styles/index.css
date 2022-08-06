@@ -9,7 +9,6 @@
 }
 *{
    margin: 0 auto;
-   max-width: 1440px;
    box-sizing: border-box;
 }
 body{
@@ -17,7 +16,7 @@ body{
    font-family: 'Armata', 'sans serif';
    font-weight: 500;
    font-size: 18px;
-   max-width: 1440px!important;
+   /* max-width: 1440px!important; */
    margin: auto!important;
 }
 /* ======= NAV STYLING ====== */
@@ -35,7 +34,9 @@ body{
    padding: 15px 0;
    background-color: var(--white);
    width: 90%;
+   max-width: 1440px;
    min-height: 64px;
+   z-index: 99999999999.;
 }
 .logo{
    width: 308px!important;
@@ -47,16 +48,19 @@ body{
    justify-content: space-between;
    width: 100%;
    position: relative;
+   z-index: 99999999999.;
 }
 .nav--links--ul{
    display: flex;
    gap: 1rem;
    list-style: none;
    color: var(--navColor);
+   z-index: 99999999999.;
 }
 .enroll{
    position: absolute;
    right: 0;
+   z-index: 99999999999.;
 }
 .thumb{
    background-color: var(--primaryorange)!important;
@@ -66,6 +70,7 @@ body{
    position: absolute!important;
    top: -5px;
    width: 55px!important;
+   z-index: 99999999999.;
 }
 .enroll--text{
    background-color: var(--primaryorange);
@@ -75,15 +80,18 @@ body{
    font-weight: 700;
    padding: 10px 32px!important;
    text-transform: none!important;
+   z-index: 99999999999.;
 }
 .links{
    min-width: 64px;
    padding: 6px 8px ;
    font-size: 18px;
    text-align: right;
+   z-index: 99999999999.;
 }
 .faqs{
    margin-right: 4rem;
+   z-index: 99999999999.;
 }
 /* ======NAV STYLING END ====== */
 
@@ -97,6 +105,7 @@ body{
    margin: auto;
    height: max-content;
    width: 90%!important;
+   max-width: 1440px;
 }
 .girl{
    width: 125%;
@@ -166,6 +175,7 @@ body{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    width: 90%;
+   max-width: 1440px;
    margin: auto;
    align-items: center;
    justify-content: space-between;
@@ -193,6 +203,7 @@ body{
    width: 90%;
    margin: auto;
    padding: 1rem 0;
+   max-width: 1440px;
 }
 .curly{
    margin-left: 30%;
@@ -214,20 +225,27 @@ body{
 /* ====== SECTION WHY ZURI END====== */
 
 /* ====== CARD SECTION STYLING ====== */
+.section4{
+   background-color: #FFF2EE;
+}
 .card--cont{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 2rem;
    width: 90%;
+   max-width: 1440px;
    margin: auto;
-   background-color: #FFF2EE;
    padding: 2rem ;
+   z-index: 1;
 }
 .cards{
    background-color: var(--white);
    border-radius: 12px;
    position: relative;
-   padding: 58px 48px;
+   padding: 48px 38px;
+}
+.cards :hover{
+   padding-bottom: 10px;
 }
 .card--red{
    background-color: var(--primaryorange);
@@ -240,13 +258,57 @@ body{
    right: 0;
 }
 .card--style{
-   flex-direction: column;
-   gap: 32px;
+   text-align: left;
+   gap: 50px;
    align-items: center;
    padding: 2rem;
+   justify-content: left;
+   font-weight: 800;
+}
+.txt--pad{
+   padding: 1rem 0;
+   margin: 0;
+}
+.card--style :nth-child(1){
+   font-size: 60px;
 }
 
 /* ====== CARD SECTION STYLING END====== */
+
+/* ====== SECTION %BSTYLING ====== */
+.section5{
+   background: var(--primaryorange);
+   position: relative;
+   padding: 2rem 0 5rem;
+   color: var(--white);
+}
+.program{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   width: 90%;
+   margin: auto;
+   max-width: 1440px;
+}
+.sctn5img{
+   width: 90%;
+   margin: auto -100px auto auto;
+}
+.myprog{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+.progdes{
+   display: flex;
+   align-items: center;
+   margin: 0;
+}
+.boxxxx{
+   position: absolute;
+   width: 8%;
+   bottom: 20px;
+   left: 20px;
+}
+/* ====== SECTION %BSTYLING ====== */
 
 /* ======= MEDIA QUERIES ====== */
 @media (max-width:1200px){
@@ -295,10 +357,14 @@ body{
 }
 @media(max-width:600px){
    .logo{
-      width: 50%!important;
+      width: 35%!important;
       min-height: 76px;
    }
    .nav-right{
-      width: 40% !important;
+      width: 35% !important;
+   }
+   .enroll{
+      max-width: 100%;
    }
 }
+
