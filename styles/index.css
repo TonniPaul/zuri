@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=Great+Vibes&family=Pacifico&display=swap');
+
+:root{
+   --primaryorange: #E7332B;
+   --navColor: #585757!important;
+   --white: #FFFDF5;
+   --grey: #E0DED7;
+   --green: #43b97f;
+}
+*{
+   margin: 0 auto;
+   max-width: 1440px;
+   box-sizing: border-box;
+}
+body{
+   box-sizing: border-box;
+   font-family: 'Armata', 'sans serif';
+   font-weight: 500;
+   font-size: 18px;
+   max-width: 1440px!important;
+   margin: auto!important;
+}
+/* ======= NAV STYLING ====== */
+.nav--containner{
+   display: flex;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   margin: auto;
+   justify-content: space-between;
+   align-items: center;
+   background-color: transparent;
+   padding: 15px 0;
+   background-color: var(--white);
+   width: 90%;
+   min-height: 64px;
+}
+.logo{
+   width: 308px!important;
+   margin: 0;
+}
+.nav-right{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+.nav--links--ul{
+   display: flex;
+   gap: 1rem;
+   list-style: none;
+   color: var(--navColor);
+}
+.enroll{
+   display: flex;
+   align-items: center;
+}
+.thumb{
+   background-color: var(--primaryorange)!important;
+   border-radius: 100px!important;
+   margin-left: -30px!important;
+   padding: 10px!important;
+   position: absolute!important;
+   width: 55px!important;
+}
+.enroll--text{
+   background-color: var(--primaryorange);
+   border-radius: 71px!important;
+   box-shadow: none!important;
+   color: #fff!important;
+   font-weight: 700;
+   padding: 10px 32px!important;
+   text-transform: none!important;
+}
+.links{
+   min-width: 64px;
+   padding: 6px 8px ;
+   font-size: 18px;
+   text-align: right;
+}
+.faqs{
+   margin-right: 4rem;
+}
+/* ======NAV STYLING END ====== */
+
+/* ====== HERO STYLING ====== */
+.hero{
+   display: grid;
+   grid-template-columns: 1fr 1.5fr 1fr;
+   align-items: center;
+   padding-top: 200px;
+   padding-bottom: 2rem;
+   margin: auto;
+   height: max-content;
+   width: 90%!important;
+}
+.girl{
+   width: 125%;
+   padding: 3rem;
+   margin-left: -3rem;
+}
+.boy{
+   width: 110%;
+   padding: 2rem;
+}
+.hero--text{
+   text-align: center;
+   display: flex;
+   gap: .5rem;
+   flex-direction: column;
+}
+.hero--text :nth-child(1){
+   color: var(--primaryorange);
+   font-weight: 500;
+}
+.hero--text :nth-child(2){
+   font-weight: 700;
+   line-height: 110%;
+   padding-top: 10px;
+}
+.snake{
+   float: right;
+   margin-right: 25%;
+   width: 33%;
+}
+.hero--text :nth-child(4){
+   width: 68%;
+   margin: auto;
+   letter-spacing: 0.00938em;
+   padding-bottom: 40px;
+   font-size: 18px;
+}
+.hero--text :nth-child(5){
+   background: var(--primaryorange);
+   color: var(--white);
+   margin: 0px;
+    cursor: pointer;
+    min-width: 64px;
+    padding: 10px 32px;
+    border-radius: 71px;
+    width: max-content;
+    margin: auto;
+    border: 0;
+}
+.hero--text :nth-child(6){
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+.small{
+   margin: -5px 0 0 33px;
+   width: 54px;
+}
+.curv{
+   width: 15%;
+   margin: -10px auto auto;
+}
+/* ====== HERO STYLING END ====== */
+
+/* =======SECTION 3 STYLING ====== */
+.spnsr{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   width: 90%;
+   margin: auto;
+   align-items: center;
+   justify-content: space-between;
+   border: 1px  solid var(--grey);
+   border-left: 0;
+   border-right: 0;
+   color: #1b1a20!important;
+   padding: 1.3rem 0;
+}
+.spnsr :nth-child(1){
+   font-size: 20px;
+   font-weight: 900;
+}
+.spnsr :nth-child(3){
+   text-align: right;
+   
+}
+.rdmr{
+   color: var(--green);
+}
+/* =======SECTION 3 STYLING END ====== */
+
+/* ====== SECTION WHY ZURI ====== */
+.whyZuri{
+   width: 90%;
+   margin: auto;
+   padding: 1rem 0;
+}
+.curly{
+   margin-left: 30%;
+}
+.why--inner--div{
+   display: grid;
+   grid-template-columns: repeat(1, 1.5fr 1fr);
+   align-items: center;
+   margin-top: -30px;
+}
+.why--text :nth-child(1){
+   color: var(--primaryorange);
+   font-size: 18px;
+   font-weight: 600;
+}
+.stttr{
+   width: 191px;
+}
+/* ====== SECTION WHY ZURI END====== */
+
+/* ====== CARD SECTION STYLING ====== */
+.card--cont{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+   width: 90%;
+   margin: auto;
+   background-color: #FFF2EE;
+   padding: 2rem ;
+}
+.cards{
+   background-color: var(--white);
+   border-radius: 12px;
+   position: relative;
+   padding: 58px 48px;
+}
+.card--red{
+   background-color: var(--primaryorange);
+   color: var(--white);
+}
+.cuvessss{
+   width: 134pxx;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.card--style{
+   flex-direction: column;
+   gap: 32px;
+   align-items: center;
+   padding: 2rem;
+}
+
+/* ====== CARD SECTION STYLING END====== */
+
+/* ======= MEDIA QUERIES ====== */
+@media (max-width:1200px){
+   .nav--containner{
+      justify-content: space-between;
+   }
+   .nav--links--ul{
+      display: none;
+   }
+   .hero{
+      display: flex;
+      flex-direction: column;
+   }
+   .girl{
+      margin:auto auto 1rem;
+      width: 100%;
+      padding: 0 2rem;
+   }
+   .boy{
+      display: none;
+   }
+   .snake{
+      margin-left: 60%;
+   }
+   .spnsr{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+   .spnsr :nth-child(3){
+      text-align: center;
+   }
+   .stttr{
+      display: none;
+   }
+   .card--cont{
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media(max-width: 900px){
+   .card--cont{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+}
+
+
