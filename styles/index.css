@@ -62,6 +62,10 @@ body{
    right: 0;
    z-index: 99999999999.;
 }
+.zurimain{
+   padding: 0;
+   text-decoration: none;
+}
 .thumb{
    background-color: var(--primaryorange)!important;
    border-radius: 100px!important;

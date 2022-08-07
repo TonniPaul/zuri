@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* first section sizing */
+#container{
+    background-image: url(https://zuri.team/img/hero-bg.svg);
+    
+}
+.zurimain{
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+ }
+.container{
+    margin: 0 auto 0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 5rem 0 20rem 0;
+}
+.container > h2{
+    font-size: 1.5rem;
+}
+.container > h1{
+    font-size: 2.3rem;
+    margin: 4rem 0 0 0;
+}
+.container > p{
+    margin: 2rem 0 0 0;
+}.container > div{
+    display: flex;
+    margin: 40px 0 0 0;
+}
+.btn-1, .btn-2{
+    height: 7vh;
+    width: 35%;
+    border-width: 0;
+}
+.btn-1{
+    background-color: #E7332B;
+    color: white;
+}
+.btn-2{
+    background-color: inherit;
+    border-width: 1px;
+    border-color: #E7332B;
+}
+.btn-1:hover{
+    background-color: inherit;
+    color: #E7332B;
+    border-color: #E7332B;
+    border-width: 1px;
+    cursor: pointer;
+}.btn-2:hover{
+    background-color: #E7332B;
+    color: white;
+    cursor: pointer;
+}
+.container > div > .btn-2{
+    margin-left: 4rem;
+}
+.container > div > .btn-1{
+    margin-left: 4rem;
+}
+.container i{
+    color: #E7332B;
+    font-size: 1.1rem;
+}
+/* section two styles */
+
+/* #container-2{
+
+} */
+.container-2-1{
+    margin: 0 auto 0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 9rem 0 3rem 0;
+}
+.container-2-1 > h6{
+    color: #E7332B;
+    font-size: 1rem;
+}
+.container-2-1 > p{
+    font-size: 1.8rem;
+    margin: .8rem 0 0 0;
+    line-height: 2.8rem;
+}
+.container-2-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 88%;
+    margin: 0 auto;
+    column-gap: 1rem;
+}
+.container-2-2 > div{
+    background-color: #FFFAFA;
+}
+.container-2-2 > div >h3{
+    padding: 2.5rem 0 2.5rem 0;
+    background-color: white;
+    margin: 5rem 0 0 2rem;
+    width: 25%;
+    text-align: center;
+    font-size: 1rem;
+}
+.sub-container-2-1 > h3{
+    padding: 2rem 0rem 2rem 0;
+    width: 30%!important;
+    margin: 5rem 3rem 0 2rem;
+    text-align: center;
+}
+.container-2-2 > div > p{
+    margin: 3rem auto 0 2rem;
+    width: 80%;
+    font-size: 1.2rem;
+}
+.container-2-2 > div > small{
+    display: block;
+    margin: 2rem auto 5rem 2rem;
+    width: 80%;
+    font-size: 1.2rem;
+    color: #E7332B;
+}
+.container-2-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 88%;
+    margin: 0 auto 0 auto;
+    padding: 10rem 0 0 0;
+}   
+.container-2-3 > div > h4{
+    font-size: 1.3rem;
+}
+.sub-container-3-2 > p{
+    padding: .5rem 0 .5rem 0;
+}
+.sub-container-3-2 > p > a:link{
+    text-decoration: none;
+    color: #E7332B;
+}
+.sub-container-3-2 > p > a{
+    color: #E7332B;
+    font-size: 1.2rem;
+}
+.sub-container-3-4{
+    justify-self: end;
+}
+.sub-container-3-3 > small{
+    display: block;
+    padding-top: 2rem;
+    color: #E7332B;
+    font-size: 1rem;
+}
+footer{
+    text-align: center;
+    margin: 1rem 0 6rem 0;
+}
+footer > p{
+    font-weight: bold;
+}
+hr{
+    margin: 3.5rem auto 0 auto;
+    font-size: 2rem;
+    width: 90%;
+    font-weight: bolder;
+}
