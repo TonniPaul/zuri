@@ -20,12 +20,6 @@ body{
    margin: auto!important;
    user-select: none;
 }
-header{
-   background-color: #fff;
-   height: max-content;
-   padding: 3rem;
-   width: 100%;
-}
 .nav-cont{
    display: flex;
    padding: .5rem;
