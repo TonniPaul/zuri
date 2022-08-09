@@ -10,6 +10,7 @@
 *{
    margin: 0;
    max-width: 100%;
+   box-sizing: border-box;
 }
 body{
    font-family: 'Armata', 'sans serif';
@@ -64,12 +65,12 @@ body{
 /* ======HERO STYLING ====== */
 .hero{
    margin: auto;
-   padding-top: 250px;
+   padding-top: 150px;
+   position: relative;
 }
 .herodiv{
    max-width: 1440px;
    width: 90%;
-   padding: 3rem 0;
    margin: auto;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -79,24 +80,55 @@ body{
 }
 .hero-img{
    width: 80%;
+   float: right;
 }
 .herodesi{
    position: relative;
    margin: 1rem;
-
    width: max-content;
 }
 .talent-text{
    color: var(--primaryorange);
+}
+.herodive--left
+.herodiv-right{
+   padding: 3rem;
 }
 .yellow{
    position: absolute;
    bottom: -15px;
    right: -15px;
 }
+.liyello{
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   width: 150px;
+}
 
 @media(max-width: 890px){
    .links{
       display: none;
+   }
+   .herodiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     
+   }
+   .herodive--left{
+      text-align: center;
+   }
+   .herodesi{
+      margin: auto;
+      margin-bottom: 2rem;
+   }
+   .herodiv-right{
+      margin: auto;
+   }
+   .hero-img{
+      display: block;
+      float: none;
+      margin: auto;
    }
 }
