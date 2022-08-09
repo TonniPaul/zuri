@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=Great+Vibes&family=Pacifico&display=swap');
+
+:root{
+   --primaryorange: #E7332B;
+   --navColor: #585757!important;
+   --white: #FFFDF5;
+   --grey: #E0DED7;
+   --green: #43b97f;
+}
+*{
+   margin: 0;
+   max-width: 100%;
+}
+body{
+   font-family: 'Armata', 'sans serif';
+   font-weight: 500;
+   font-size: 18px;
+   margin: auto!important;
+}
+.nav-cont{
+   display: flex;
+   padding: .5rem;
+   width: 90%;
+   background-color: var(--white);
+   margin: 0 auto;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1440px;
+   position: fixed;
+   z-index: 1100;
+   top: 0px;
+   left: 0;
+   right: 0px;
+}
+.nav-items{
+   list-style: none;
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+}
+.zurimain{
+   padding: 0;
+   text-decoration: none;
+   color: inherit;
+}
+.links{
+   padding: 11px 35px!important;
+}
+.hire{
+   background-color: var(--primaryorange);
+   color: var(--white);
+   padding: 11px 35px;
+   align-self: center;
+   border-radius: 0 0 8px 0;
+   text-align: center;
+   border: none;
+   font-size: 18px;
+}
+
+/* .logo{
+   min-height: 64px;
+} */
+
+/* ======HERO STYLING ====== */
+.hero{
+   margin: auto;
+   padding-top: 250px;
+}
+.herodiv{
+   max-width: 1440px;
+   width: 90%;
+   padding: 3rem 0;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 3rem;
+   align-items: center;
+   justify-content: space-between;
+}
+.hero-img{
+   width: 80%;
+}
+.herodesi{
+   position: relative;
+   margin: 1rem;
+
+   width: max-content;
+}
+.talent-text{
+   color: var(--primaryorange);
+}
+.yellow{
+   position: absolute;
+   bottom: -15px;
+   right: -15px;
+}
+
+@media(max-width: 890px){
+   .links{
+      display: none;
+   }
+}
