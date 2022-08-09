@@ -248,8 +248,12 @@ body{
    position: relative;
    padding: 48px 38px;
 }
-.cards :hover{
-   padding-bottom: 10px;
+.cards{
+   margin: 1.5rem 0 0;
+   transition: all .2s ease-in-out;
+}
+.cards:hover{
+   margin: .7rem 0 0;
 }
 .card--red{
    background-color: var(--primaryorange);
