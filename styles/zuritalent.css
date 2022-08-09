@@ -20,6 +20,12 @@ body{
    margin: auto!important;
    user-select: none;
 }
+header{
+   background-color: #fff;
+   height: max-content;
+   padding: 3rem;
+   width: 100%;
+}
 .nav-cont{
    display: flex;
    padding: .5rem;
@@ -89,7 +95,7 @@ body{
 }
 .herodesi{
    position: relative;
-   margin: 1rem;
+   margin: 1rem 0;
    width: max-content;
 }
 .txt{
@@ -104,7 +110,7 @@ body{
 }
 .yellow{
    position: absolute;
-   bottom: -25px;
+   bottom: -15px;
    right: -20px;
 }
 .liyello{
@@ -156,9 +162,13 @@ body{
    margin: auto;
 }
 .skillset{
-   display: flex;
-   gap: 1rem;
+   display: grid;
+   grid-template-columns: repeat(6,auto);
+   grid-template-rows: minmax(max-content, auto);
    align-items: center;
+   gap: 1rem;
+   text-align: center;
+   flex: 1fr 1fr 1fr;
 }
 .gift{
    padding: 1rem 1.4rem;
@@ -171,7 +181,95 @@ body{
 .gift:hover{
    margin-top: .3rem;
 }
+/* ====== SECTION HIRE TALENT ====== */
+.hiretalent{
+   background-color: #FFF8E5;
+   padding: 4rem 0 2rem;
+   text-align: center;
+}
+.hiretaldiv{
+   max-width: 1440px;
+   width: 90%;
+   margin: auto;
+}
+.hireh1{
+   margin-bottom: 4rem;
+}
+.griddiv{
+   display: grid;
+   max-width: 1440px;
+   width: 90%;
+   margin: auto;
+   grid-template-areas: 
+   "grid1 grid1 grid2 grid2 grid3 grid3"
+   "n grid4 grid4 grid5 grid5 b";
+   vertical-align: middle;
+   grid-gap: 16px;
+}
+.gridd{
+   background-color: #fff;
+   padding: 45px 1rem;
+   border-radius: 0 0 16px 0;
+  
+}
+.gridd:hover{
+   background-color: #000;
+   color: #fff;
+   transition: all .2s ease-in-out;
+}
+.grid1{
+   grid-area: grid1;
+}
+.grid2{
+   grid-area: grid2;
+}
+.grid3{
+   grid-area: grid3;
+}
+.grid4{
+   grid-area: grid4;
+}
+.grid5{
+   grid-area: grid5;
+}
+.buttonbtm{
+   display: block;
+}
+footer{
+   background: #000;
+   color: #fff;
+   padding: 2rem;
+}
+.footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   padding: 2rem 0 0;
+   max-width: 1440px;
+   margin: auto;
+   font-size: 16px;
+   font-weight: 400;
+}
+.socials{
+   display: flex;
+   gap: 10px;
+}
+.icons{
+   width: 30px;
+}
 /* ==========MEDIA QUERIES ======== */
+@media(max-width:1000px){
+   .griddiv{
+      grid-template-areas: 
+      "grid1 grid2"
+      "grid3 grid4"
+      "grid5 grid5";
+   }
+   .skillset{
+      grid-template-columns: repeat(3, auto);
+   }
+}
 @media(max-width: 890px){
    .links{
       display: none;
@@ -200,5 +298,27 @@ body{
    .countries{
       justify-content: center;
 
+   }
+}
+@media(max-width:600px){
+   .griddiv{
+    display: block;
+   }
+   .gridd{
+      margin: 1rem auto;
+   }
+   .skillset{
+      grid-template-columns: repeat(2, auto);
+   }
+   .footer{
+      flex-direction: column;
+      gap: 20px;
+   }
+   .copy{
+      flex-direction: column-reverse;
+   }
+   .cpr{
+      border-top: 1px solid var(--navColor);
+      padding-top: 1rem;
    }
 }
