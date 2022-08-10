@@ -33,8 +33,7 @@ body{
    background-color: #fff;
    width: 90%;
    max-width: 1440px;
-   min-height: 64px;
-   z-index: 99999999999.;
+   z-index: 99999999999!important;
 }
 .logo{
    width: 308px;
@@ -428,6 +427,23 @@ hr{
    top: 10px;
    width: 150px;
    left: 0;
+}
+.table{
+   width: 80%;
+   text-align: left;
+   margin: auto;
+   padding: 1rem;
+}
+.tablecontent{
+   border: 2px solid var(--navColor);
+   padding: 1rem;
+}
+.tableflex{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding: 1rem 0;
+   align-items: center;
 }
 /* ======= MEDIA QUERIES ====== */
 @media (max-width:1200px){
